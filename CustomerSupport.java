@@ -7,12 +7,6 @@ import java.sql.Statement;
 import java.sql.SQLException;
 
 import org.kiot.customer.Customer;
-
-/**
- *	CustomerSupporty class performs customer operations
- *	@version 04/03/2022
- *  @author praveen kandhan
- */
 public class CustomerSupport {
 	
 	public CustomerSupport() {
@@ -91,7 +85,7 @@ public class CustomerSupport {
 				ResultSet resultSet5 = statement.executeQuery
 						("select rateofinterest from customer where "
 								+ "loanholdername='Raman' ");
-				System.out.println("***Arjun’s rate of Interest***");
+				System.out.println("***Arjunâ€™s rate of Interest***");
 				while (resultSet5.next()) {
 					System.out.println(resultSet5.getString("rateofinterest")
 							+ "%");
