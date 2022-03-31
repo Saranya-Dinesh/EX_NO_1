@@ -8,9 +8,7 @@ public class Customer {
 		super();
 		
 	}
-	public Customer(int id, long loanAmount, long emiperMonth, 
-			String loanHolderName, String address, String gender,
-			String loanSpecification, float rateofInterest) {
+	public Customer(int id, long loanAmount, long emiperMonth,String loanHolderName, String address, String gender,String loanSpecification, float rateofInterest) {
 		super();
 		this.id = id;
 		this.loanAmount = loanAmount;
@@ -69,15 +67,13 @@ public class Customer {
 	public void setRateofInterest(float rateofInterest) {
 		this.rateofInterest = rateofInterest;
 	}
-	
-	
+		
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
 		return result;
-	}
-	
+	}	
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
